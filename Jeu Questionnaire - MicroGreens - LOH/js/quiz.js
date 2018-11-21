@@ -45,7 +45,6 @@ function obtenirPointage()
  */
 function estFinPartie(questionCourante)
 {
-	console.log(finPartie)
 	var finPartie = true;
 
 	if (questionCourante < (MAX_QUESTIONS - 1))
@@ -61,7 +60,7 @@ function estFinPartie(questionCourante)
  * @description Incrémente l'index indiquant la question courante.
  */
 
-function changeText()
+function changeQuestion()
 	{
 		document.getElementById("texteQuestion").textContent = questionsQuiz[0][0];
 	}
@@ -97,13 +96,20 @@ function obtenirChoix(noQuestion)
 {
 	//ajouter votre code ici
 }
-
-function majTexteChoix(noQuestion)
+function changeTexteChoix()
 {
-		document.getElementById("btnChoix1").textContent = questionsQuiz[questionCourante][3];
-		document.getElementById("btnChoix2").textContent = questionsQuiz[questionCourante][4];
-		document.getElementById("btnChoix3").textContent = questionsQuiz[questionCourante][5];
-		document.getElementById("btnChoix4").textContent = questionsQuiz[questionCourante][6];
+	document.getElementById("btnChoix1").textContent = questionsQuiz[0][3];
+	document.getElementById("btnChoix2").textContent = questionsQuiz[0][4];
+	document.getElementById("btnChoix3").textContent = questionsQuiz[0][5];
+	document.getElementById("btnChoix4").textContent = questionsQuiz[0][6];
+}
+
+function majTexteChoix()
+{
+	document.getElementById("btnChoix1").textContent = questionsQuiz[questionCourante][3];
+	document.getElementById("btnChoix2").textContent = questionsQuiz[questionCourante][4];
+	document.getElementById("btnChoix3").textContent = questionsQuiz[questionCourante][5];
+	document.getElementById("btnChoix4").textContent = questionsQuiz[questionCourante][6];
 }
 
 /**
@@ -125,10 +131,6 @@ function majPointage()
 	//ajouter votre code ici
 }
 
-/**
- * @name majTotalQuestion
- * @description Mets à jour le nombre total de questions dans l'interface.
- */
 
 
 /**
@@ -145,14 +147,7 @@ function majTexteQuestion(noQuestion)
 	$('#texteQuestion').addClass('animated bounceInLeft delay-1s');
 }
 
-/**
- * @name majNoQuestionCourant
- * @description Modifie l'interface en affichant une le numéro de la question courante.
- */
-function majNoQuestionCourant()
-{	
-	
-}
+
 
 /**
  * @name remiseAZeroBoutons
