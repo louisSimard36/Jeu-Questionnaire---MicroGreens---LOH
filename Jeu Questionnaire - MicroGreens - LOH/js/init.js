@@ -94,6 +94,7 @@ var questionsQuiz = [
 
 function init() 
 {
+  var choix1 = document.getElementById("btnChoix1");
   document.getElementById("boutonDebuter").addEventListener("click", changeQuestion, false);
   document.getElementById("boutonDebuter").addEventListener("click", obtenirChoix, false);
   document.getElementById("boutonDebuter").addEventListener("click", changeTexteChoix, false);
