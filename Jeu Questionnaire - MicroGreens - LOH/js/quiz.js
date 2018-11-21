@@ -67,7 +67,7 @@ function changeText()
 		document.getElementById("texteQuestion").textContent = questionsQuiz[0][0];
 	}
 
-function questionSuivante(estFinPartie)
+function questionSuivante()
 {
 	console.log(questionSuivante)
 	if (questionCourante < (MAX_QUESTIONS - 1))
@@ -104,10 +104,10 @@ function obtenirChoix(noQuestion)
 
 function majTexteChoix(noQuestion)
 {
-	document.getElementById("btnChoix1").textContent = questionsQuiz[questionCourante][3];
-	document.getElementById("btnChoix2").textContent = questionsQuiz[questionCourante][4];
-	document.getElementById("btnChoix3").textContent = questionsQuiz[questionCourante][5];
-	document.getElementById("btnChoix4").textContent = questionsQuiz[questionCourante][6];
+		document.getElementById("btnChoix1").textContent = questionsQuiz[questionCourante][3];
+		document.getElementById("btnChoix2").textContent = questionsQuiz[questionCourante][4];
+		document.getElementById("btnChoix3").textContent = questionsQuiz[questionCourante][5];
+		document.getElementById("btnChoix4").textContent = questionsQuiz[questionCourante][6];
 }
 
 /**
