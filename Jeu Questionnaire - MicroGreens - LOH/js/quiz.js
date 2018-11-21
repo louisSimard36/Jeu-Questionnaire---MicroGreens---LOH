@@ -15,7 +15,6 @@
 /*
 function validerQuestion(noQuestionCourante, choixUtilisateur)
 {
-
 	if (choixUtilisateur == )
 }
 */
@@ -96,10 +95,7 @@ function obtenirBonneReponse(noQuestion)
  */
 function obtenirChoix(noQuestion)
 {
-	document.getElementById("btnChoix1").textContent = questionsQuiz[0][3];
-	document.getElementById("btnChoix2").textContent = questionsQuiz[0][4];
-	document.getElementById("btnChoix3").textContent = questionsQuiz[0][5];
-	document.getElementById("btnChoix4").textContent = questionsQuiz[0][6];
+	//ajouter votre code ici
 }
 
 function majTexteChoix(noQuestion)
