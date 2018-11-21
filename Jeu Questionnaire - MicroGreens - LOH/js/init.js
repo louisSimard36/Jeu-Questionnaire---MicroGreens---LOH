@@ -76,7 +76,6 @@ var tableauQuestions = [
 
 var questionsQuiz = [
 
-
 ["Quel pourcentage de la surface de la Terre le domaine agricole occupe-il?", 3, "https://laveritesurlasante.com/micro-greens-loh/problematique.html " ,"15%","24%","38%","53%"],
 ["Combien de temps devons-nous attendre après la germination d’un microgreen pour le récolter?", 4, "https://www.bootstrapfarmer.com/blogs/microgreens/the-ultimate-microgreen-cheat-sheet" ,"2 semaines" ,"Entre une et 2 semaines" ,"3 semaines" ,"Entre 2 et 3 semaines"],
 ["Quelle molécule retrouvons-nous en plus grande variété dans les microgreens en comparaison avec leurs contreparties végétales matures?", 1, "https://www.getmomental.com/blogs/nutrition/what-are-microgreens-10-best-microgreens-and-why-your-body-craves-them-momental-nootropics " ,"Polyphénol" ,"Sel" ,"Acide aminé" ,"Glucose"],
