@@ -95,7 +95,7 @@ function init()
 {
   document.getElementById("boutonDebuter").addEventListener("click", changeText, false);
   document.getElementById("boutonDebuter").addEventListener("click", obtenirChoix, false);
-  document.getElementById("boiteChoix").addEventListener("click", questionSuivante, false);
+  document.getElementById("boiteChoix").addEventListener("click", questionSuivante, majTexteChoix, false);
   document.getElementById("totalQuestions").textContent = MAX_QUESTIONS;
 }
 
