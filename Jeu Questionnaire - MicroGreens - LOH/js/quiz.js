@@ -102,6 +102,14 @@ function obtenirChoix(noQuestion)
 	document.getElementById("btnChoix4").textContent = questionsQuiz[0][6];
 }
 
+function majTexteChoix(noQuestion)
+{
+	document.getElementById("btnChoix1").textContent = questionsQuiz[questionCourante][3];
+	document.getElementById("btnChoix2").textContent = questionsQuiz[questionCourante][4];
+	document.getElementById("btnChoix3").textContent = questionsQuiz[questionCourante][5];
+	document.getElementById("btnChoix4").textContent = questionsQuiz[questionCourante][6];
+}
+
 /**
  * @name afficherBonneReponse
  * @description Modifie la fenêtre modale pour afficher la bonne réponse pour une question donnée.
@@ -126,15 +134,6 @@ function majPointage()
  * @description Mets à jour le nombre total de questions dans l'interface.
  */
 
-/**
- * @name majTexteChoix
- * @description Modifie l'interface en affichant les réponses dans des boutons pour une question donnée.
- * @param {*} noQuestion Index de la question pour laquelle il faut afficher les réponses.
- */
-function majTexteChoix(noQuestion)
-{
-	//ajouter votre code ici
-}
 
 /**
  * @name majTexteQuestion
