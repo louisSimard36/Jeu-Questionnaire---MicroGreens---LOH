@@ -94,11 +94,6 @@ function init()
   var choix3 = document.getElementById("btnChoix3");
   var choix4 = document.getElementById("btnChoix4");
  
-  choix1 = 1;
-  choix2 = 2;
-  choix3 = 3;
-  choix4 = 4;
- 
   document.getElementById("boutonDebuter").addEventListener("click", changeQuestion, false);
   document.getElementById("boutonDebuter").addEventListener("click", obtenirChoix, false);
   document.getElementById("boutonDebuter").addEventListener("click", changeTexteChoix, false);
