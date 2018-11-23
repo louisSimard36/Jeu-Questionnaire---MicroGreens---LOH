@@ -12,19 +12,12 @@
  * @param {*} choixUtilisateur choix fait par l'utilisateur
  * @returns true si la réponse choisie est bonne, sinon false
  */
-
+/*
 function validerQuestion(noQuestionCourante, choixUtilisateur)
 {
-	if (choixUtilisateur == questionsQuiz[questionCourante][1]) 
-	{
-		afficherBonneReponse();
-	}
-	else
-	{
-		afficherMauvaiseReponse();
-	}
+	if (choixUtilisateur == )
 }
-
+*/
 /**
  * @name ajouterPoint
  * @description Ajoute un point au total des points.
@@ -70,6 +63,7 @@ function estFinPartie(questionCourante)
 function changeQuestion()
 	{
 		document.getElementById("texteQuestion").textContent = questionsQuiz[0][0];
+		document.getElementById("boitesChoix").style.display = "block";
 	}
 
 function questionSuivante()
@@ -126,7 +120,7 @@ function majTexteChoix()
  */
 function afficherBonneReponse(noQuestion)
 {
-	prompt("nibba");
+	//ajouter votre code ici
 }
 
 /**
@@ -190,7 +184,7 @@ function majInterface()
  */
 function selectionnerChoix(noChoix)
 {
-	
+	//ajouter votre code ici
 }
 
 /**
