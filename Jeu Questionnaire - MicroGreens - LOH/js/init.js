@@ -89,10 +89,10 @@ var questionsQuiz = [
 
 function init() 
 {
-  var choix1 = document.getElementById("btnChoix1");
-  var choix2 = document.getElementById("btnChoix2");
-  var choix3 = document.getElementById("btnChoix3");
-  var choix4 = document.getElementById("btnChoix4");
+  reponseUtilisateur = document.getElementById("btnChoix1");
+  reponseUtilisateur = document.getElementById("btnChoix2");
+  reponseUtilisateur = document.getElementById("btnChoix3");
+  reponseUtilisateur = document.getElementById("btnChoix4");
  
   document.getElementById("boutonDebuter").addEventListener("click", changeQuestion, false);
   document.getElementById("boutonDebuter").addEventListener("click", obtenirChoix, false);
