@@ -59,7 +59,6 @@ var reponseUtilisateur = 0;
   */
 var tableauQuestions = [
 
-
 ["Quel pourcentage de la surface de la Terre le domaine agricole occupe-il?", 3, "https://laveritesurlasante.com/micro-greens-loh/problematique.html " ,"15%","24%","38%","53%"],
 ["Combien de temps devons-nous attendre après la germination d’un microgreen pour le récolter?", 4, "https://www.bootstrapfarmer.com/blogs/microgreens/the-ultimate-microgreen-cheat-sheet" ,"2 semaines" ,"Entre une et 2 semaines" ,"3 semaines" ,"Entre 2 et 3 semaines"],
 ["Quelle molécule retrouvons-nous en plus grande variété dans les microgreens en comparaison avec leurs contreparties végétales matures?", 1, "https://www.getmomental.com/blogs/nutrition/what-are-microgreens-10-best-microgreens-and-why-your-body-craves-them-momental-nootropics " ,"Polyphénol" ,"Sel" ,"Acide aminé" ,"Glucose"],
@@ -70,13 +69,11 @@ var tableauQuestions = [
 ["En moyenne, combien d’argent doit être dépensé pour cultiver un pied carré de microgreens?", 2, "https://www.profitableplantsdigest.com/top-10-questions-about-growing-microgreens-for-profit/" ,"5$" ,"3$" ,"10$" ,"8$"],
 ["Quel pourcentage des déforestations sont causés par l’agriculture?", 2, "https://laveritesurlasante.com/micro-greens-loh/problematique.html" ,"90%" ,"80%" ,"70%" ,"60%"],
 ["Quelle est la concentration de vitamines dans les microgreens de choux rouge en comparaison avec leur version adulte?", 1, " http://lessourciers.com/formation-hydroponie-2/formation-microgreens/" ,"10 fois plus" ,"5 fois plus" ,"5 fois moins" ,"10 fois moins"],
-
 
 ];
 
 var questionsQuiz = [
 
-
 ["Quel pourcentage de la surface de la Terre le domaine agricole occupe-il?", 3, "https://laveritesurlasante.com/micro-greens-loh/problematique.html " ,"15%","24%","38%","53%"],
 ["Combien de temps devons-nous attendre après la germination d’un microgreen pour le récolter?", 4, "https://www.bootstrapfarmer.com/blogs/microgreens/the-ultimate-microgreen-cheat-sheet" ,"2 semaines" ,"Entre une et 2 semaines" ,"3 semaines" ,"Entre 2 et 3 semaines"],
 ["Quelle molécule retrouvons-nous en plus grande variété dans les microgreens en comparaison avec leurs contreparties végétales matures?", 1, "https://www.getmomental.com/blogs/nutrition/what-are-microgreens-10-best-microgreens-and-why-your-body-craves-them-momental-nootropics " ,"Polyphénol" ,"Sel" ,"Acide aminé" ,"Glucose"],
@@ -88,9 +85,7 @@ var questionsQuiz = [
 ["Quel pourcentage des déforestations sont causés par l’agriculture?", 2, "https://laveritesurlasante.com/micro-greens-loh/problematique.html" ,"90%" ,"80%" ,"70%" ,"60%"],
 ["Quelle est la concentration de vitamines dans les microgreens de choux rouge en comparaison avec leur version adulte?", 1, " http://lessourciers.com/formation-hydroponie-2/formation-microgreens/" ,"10 fois plus" ,"5 fois plus" ,"5 fois moins" ,"10 fois moins"],
 
-
 ];
-
 
 function init() 
 {
@@ -98,6 +93,11 @@ function init()
   var choix2 = document.getElementById("btnChoix2");
   var choix3 = document.getElementById("btnChoix3");
   var choix4 = document.getElementById("btnChoix4");
+ 
+  choix1 = 1;
+  choix2 = 2;
+  choix3 = 3;
+  choix4 = 4;
  
   document.getElementById("boutonDebuter").addEventListener("click", changeQuestion, false);
   document.getElementById("boutonDebuter").addEventListener("click", obtenirChoix, false);
