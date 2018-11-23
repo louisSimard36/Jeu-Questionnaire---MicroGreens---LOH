@@ -1,7 +1,8 @@
 /**
  * @module quiz.js
- * @author Coéquipier1
- * @author Coéquipier2
+ * @author Louis-Étienne Simard
+ * @author Hubert Desrochers
+ * @author Olivier Fortin
  * @copyright 2018
  */
 
@@ -12,12 +13,20 @@
  * @param {*} choixUtilisateur choix fait par l'utilisateur
  * @returns true si la réponse choisie est bonne, sinon false
  */
-/*
+
 function validerQuestion(noQuestionCourante, choixUtilisateur)
 {
-	if (choixUtilisateur == )
+	console.log(validerQuestion)
+	if (choixUtilisateur == questionsQuiz[questionCourante][1]) 
+	{
+		afficherBonneReponse();
+	}
+	else
+	{
+		afficherMauvaiseReponse();
+	}
 }
-*/
+
 /**
  * @name ajouterPoint
  * @description Ajoute un point au total des points.
@@ -60,7 +69,7 @@ function estFinPartie(questionCourante)
  * @description Incrémente l'index indiquant la question courante.
  */
 
-function changeQuestion()
+function chargerQuestion()
 	{
 		document.getElementById("texteQuestion").textContent = questionsQuiz[0][0];
 		document.getElementById("boitesChoix").style.display = "block";
@@ -120,7 +129,12 @@ function majTexteChoix()
  */
 function afficherBonneReponse(noQuestion)
 {
-	//ajouter votre code ici
+	prompt("nibba");
+}
+
+function afficherMauvaiseReponse()
+{
+
 }
 
 /**
