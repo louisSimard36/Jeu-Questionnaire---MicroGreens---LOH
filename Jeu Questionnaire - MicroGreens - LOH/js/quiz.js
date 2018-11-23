@@ -2,22 +2,30 @@
  * @module quiz.js
  * @author Louis-Étienne Simard
  * @author Hubert Desrochers
- * @author Olivier Fortin
  * @copyright 2018
  */
 
-/**
- * @name validerQuestion
- * @description Valide si la réponse choisie est la bonne.
- * @param {*} noQuestion numéro de la question
- * @param {*} choixUtilisateur choix fait par l'utilisateur
- * @returns true si la réponse choisie est bonne, sinon false
- */
+function determinerChoixUtilisateur1()
+{
+	reponseUtilisateur = 1;
+}
+function determinerChoixUtilisateur2()
+{
+	reponseUtilisateur = 2;
+}
+function determinerChoixUtilisateur3()
+{
+	reponseUtilisateur = 3;
+}
+function determinerChoixUtilisateur4()
+{
+	reponseUtilisateur = 4;
+}
 
 function validerQuestion(noQuestionCourante, choixUtilisateur)
 {
 	console.log(validerQuestion)
-	if (choixUtilisateur == questionsQuiz[questionCourante][1]) 
+	if (reponseUtilisateur == questionsQuiz[questionCourante][1]) 
 	{
 		afficherBonneReponse();
 	}
@@ -26,6 +34,8 @@ function validerQuestion(noQuestionCourante, choixUtilisateur)
 		afficherMauvaiseReponse();
 	}
 }
+
+
 
 /**
  * @name ajouterPoint
@@ -127,9 +137,9 @@ function majTexteChoix()
  * @description Modifie la fenêtre modale pour afficher la bonne réponse pour une question donnée.
  * @param {*} noQuestion Index de la question pour laquelle il faut afficher la bonne réponse.
  */
-function afficherBonneReponse(noQuestion)
+function afficherBonneReponse()
 {
-	prompt("nibba");
+	
 }
 
 function afficherMauvaiseReponse()
