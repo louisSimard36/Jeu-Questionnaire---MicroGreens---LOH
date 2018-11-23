@@ -12,12 +12,19 @@
  * @param {*} choixUtilisateur choix fait par l'utilisateur
  * @returns true si la réponse choisie est bonne, sinon false
  */
-/*
+
 function validerQuestion(noQuestionCourante, choixUtilisateur)
 {
-	if (choixUtilisateur == )
+	if (choixUtilisateur == questionsQuiz[questionCourante][1]) 
+	{
+		afficherBonneReponse();
+	}
+	else
+	{
+		afficherMauvaiseReponse();
+	}
 }
-*/
+
 /**
  * @name ajouterPoint
  * @description Ajoute un point au total des points.
@@ -183,7 +190,7 @@ function majInterface()
  */
 function selectionnerChoix(noChoix)
 {
-	//ajouter votre code ici
+	
 }
 
 /**
