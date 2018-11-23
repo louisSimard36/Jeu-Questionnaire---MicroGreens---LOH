@@ -126,7 +126,7 @@ function majTexteChoix()
  */
 function afficherBonneReponse(noQuestion)
 {
-	//ajouter votre code ici
+	prompt("nibba");
 }
 
 /**
