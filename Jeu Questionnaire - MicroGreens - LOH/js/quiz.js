@@ -44,7 +44,7 @@ function validerQuestion(determinerChoixUtilisateur1, determinerChoixUtilisateur
  */
 function ajouterPoint()
 {
-	document.getElementById("totalPoints").textContent = totalPointage + 1;
+	totalPointage++;
 }
 
 /**
@@ -54,7 +54,7 @@ function ajouterPoint()
  */
 function obtenirPointage()
 {
-
+	document.getElementById("totalPoints").textContent = totalPointage + 1;	
 }
 
 /**
