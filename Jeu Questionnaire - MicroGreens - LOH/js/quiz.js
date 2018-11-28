@@ -33,15 +33,13 @@ function validerQuestion(determinerChoixUtilisateur1, determinerChoixUtilisateur
 		window.prompt("Bonne Réponse")
 		ajouterPoint();
 	}
-
 }
-
-
 
 /**
  * @name ajouterPoint
  * @description Ajoute un point au total des points.
  */
+
 function ajouterPoint()
 {
 	document.getElementById("totalPoints").textContent = totalPointage + 1;
@@ -53,6 +51,7 @@ function ajouterPoint()
  * @description Obtiens le pointage total accumulé.
  * @returns Le pointage total
  */
+
 function obtenirPointage()
 {
 	totalPointage++;
@@ -64,16 +63,18 @@ function obtenirPointage()
  * @param {*} questionCourante Index de la question courante
  * @returns true si l'index de la question courrante est égal au nombre maximum de questions, sinon faux
  */
+
 function estFinPartie(questionCourante)
 {
 	var finPartie = true;
-
 	if (questionCourante < (MAX_QUESTIONS - 1))
 	{
 		finPartie = false;
 	}
-	return finPartie;
-	
+	if (finPartie == true)
+	{
+		//charger page de fin de partie //
+	// return finPartie; //	
 }
 
 /**
@@ -82,10 +83,10 @@ function estFinPartie(questionCourante)
  */
 
 function chargerQuestion()
-	{
-		document.getElementById("texteQuestion").textContent = questionsQuiz[0][0];
-		document.getElementById("boitesChoix").style.display = "block";
-	}
+{
+	document.getElementById("texteQuestion").textContent = questionsQuiz[0][0];
+	document.getElementById("boitesChoix").style.display = "block";
+}
 
 function questionSuivante()
 {
@@ -96,12 +97,14 @@ function questionSuivante()
 		document.getElementById("noQuestionCourante").textContent = (questionCourante + 1);
 	}
 }
+	
 /**
  * @name obtenirBonneReponse
  * @description Incrémente l'index indiquant la question courante.
  * @param {*} noQuestion L'index de la question
  * @returns retourne la bonne réponse
  */
+	
 function obtenirBonneReponse(noQuestion)
 {
 	//ajouter votre code ici
@@ -113,10 +116,12 @@ function obtenirBonneReponse(noQuestion)
  * @param {*} noQuestion Index de la question pour laquelle il faut obtenir les choix de réponse.
  * @returns retourne un tableau contenant les choix de la question
  */
+	
 function obtenirChoix(noQuestion)
 {
 	//ajouter votre code ici
 }
+	
 function changeTexteChoix()
 {
 	document.getElementById("btnChoix1").textContent = questionsQuiz[0][3];
@@ -138,6 +143,7 @@ function majTexteChoix()
  * @description Modifie la fenêtre modale pour afficher la bonne réponse pour une question donnée.
  * @param {*} noQuestion Index de la question pour laquelle il faut afficher la bonne réponse.
  */
+	
 function afficherBonneReponse()
 {
 	
@@ -152,33 +158,31 @@ function afficherMauvaiseReponse()
  * @name majPointage
  * @description Mets à jour le total des points accumulés dans l'interface.
  */
+	
 function majPointage()
 {
 	//ajouter votre code ici
 }
-
-
 
 /**
  * @name majTexteQuestion
  * @description Modifie l'interface en affichant une question.
  * @param {*} noQuestion Index de la question qu'il faut afficher.
  */
+	
 function majTexteQuestion(noQuestion)
 {
 	//ajouter votre code ici
-
 	$('#texteQuestion').removeClass('animated bounceInLeft delay-1s');
 	$('#texteQuestion').removeClass('animated wobble delay-2s');
 	$('#texteQuestion').addClass('animated bounceInLeft delay-1s');
 }
 
-
-
 /**
  * @name remiseAZeroBoutons
  * @description Modifie l'interface en remettant à l'état initial les boutons de réponse.
  */
+	
 function remiseAZeroBoutons()
 {
 	//ajouter votre code ici
@@ -188,6 +192,7 @@ function remiseAZeroBoutons()
  * @name majProgression
  * @description Modifie l'interface en ajustant la barre de progression.
  */
+	
 function majProgression()
 {
 	//ajouter votre code ici
@@ -197,6 +202,7 @@ function majProgression()
  * @name majInterface
  * @description Modifie l'interface en changeant la question, les choix de réponses, en mettant à jour le pointage, la barre de progression et le numéro de la question courante et en remettant à zéro les boutons.
  */
+	
 function majInterface()
 {
 	//ajouter votre code ici
@@ -207,6 +213,7 @@ function majInterface()
  * @description Modifie l'interface pour changer l'apparence du bouton cliqué et activer le bouton Valider.
  * @param {*} noChoix Numéro du choix de réponse sélectionné.
  */
+	
 function selectionnerChoix(noChoix)
 {
 	//ajouter votre code ici
@@ -216,6 +223,7 @@ function selectionnerChoix(noChoix)
  * @name afficherBoiteFinDeJeu
  * @description Modifie l'interface pour afficher la boîte de résumé et cacher la boîte de question.
  */
+	
 function afficherBoiteFinDeJeu()
 {
 	//ajouter votre code ici
