@@ -31,6 +31,7 @@ function validerQuestion(determinerChoixUtilisateur1, determinerChoixUtilisateur
 	else
 	{
 		window.prompt("Bonne Réponse")
+		ajouterPoint();
 	}
 
 }
