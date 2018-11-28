@@ -24,7 +24,7 @@ const NB_CHOIX_MAX = 4;
   * @type {number}
   * @description Position de l’index de la bonne réponse.
   */
-const POS_REPONSE = 0;
+var positionReponse = 0;
 
 /**
   * @global
@@ -57,7 +57,8 @@ var reponseUtilisateur = 0;
   * @description Liste des questions disponibles pour le quiz.
   * @example [["Quel est le meilleur aliment pour votre santé?", 1, "https://www.google.ca" ,"Brocoli","Croustilles sans OGM","Crème glacée","Poutine déjeuner"]]
   */
-var tableauQuestions = [
+var tableauQuestions = 
+[
 
 ["Quel pourcentage de la surface de la Terre le domaine agricole occupe-il?", 3, "https://laveritesurlasante.com/micro-greens-loh/problematique.html " ,"15%","24%","38%","53%"],
 ["Combien de temps devons-nous attendre après la germination d’un microgreen pour le récolter?", 4, "https://www.bootstrapfarmer.com/blogs/microgreens/the-ultimate-microgreen-cheat-sheet" ,"2 semaines" ,"Entre une et 2 semaines" ,"3 semaines" ,"Entre 2 et 3 semaines"],
@@ -89,18 +90,29 @@ var questionsQuiz = [
 
 function init() 
 {
-  document.getElementById("btnChoix1").addEventListener("click", determinerChoixUtilisateur1, false)
-  document.getElementById("btnChoix2").addEventListener("click", determinerChoixUtilisateur2, false)
-  document.getElementById("btnChoix3").addEventListener("click", determinerChoixUtilisateur3, false)
-  document.getElementById("btnChoix4").addEventListener("click", determinerChoixUtilisateur4, false)
- 
   document.getElementById("boutonDebuter").addEventListener("click", chargerQuestion, false);
-  document.getElementById("boutonDebuter").addEventListener("click", obtenirChoix, false);
   document.getElementById("boutonDebuter").addEventListener("click", changeTexteChoix, false);
- 
-  document.getElementById("boiteChoix").addEventListener("click", questionSuivante, false);
-  document.getElementById("boiteChoix").addEventListener("click", majTexteChoix, false);
- 
+
+  document.getElementById("btnChoix1").addEventListener("click", determinerChoixUtilisateur1, false);
+  document.getElementById("btnChoix1").addEventListener("click", questionSuivante, false);
+  document.getElementById("btnChoix1").addEventListener("click", majTexteChoix, false);
+  document.getElementById("btnChoix1").addEventListener("click", validerQuestion, false);
+
+  document.getElementById("btnChoix2").addEventListener("click", determinerChoixUtilisateur2, false);
+  document.getElementById("btnChoix2").addEventListener("click", questionSuivante, false);
+  document.getElementById("btnChoix2").addEventListener("click", majTexteChoix, false);
+  document.getElementById("btnChoix2").addEventListener("click", validerQuestion, false);
+
+  document.getElementById("btnChoix3").addEventListener("click", determinerChoixUtilisateur3, false);
+  document.getElementById("btnChoix3").addEventListener("click", questionSuivante, false);
+  document.getElementById("btnChoix3").addEventListener("click", majTexteChoix, false);
+  document.getElementById("btnChoix3").addEventListener("click", validerQuestion, false);
+
+  document.getElementById("btnChoix4").addEventListener("click", determinerChoixUtilisateur4, false);
+  document.getElementById("btnChoix4").addEventListener("click", questionSuivante, false);
+  document.getElementById("btnChoix4").addEventListener("click", majTexteChoix, false);
+  document.getElementById("btnChoix4").addEventListener("click", validerQuestion, false);
+
   document.getElementById("totalQuestions").textContent = MAX_QUESTIONS;
 }
 
