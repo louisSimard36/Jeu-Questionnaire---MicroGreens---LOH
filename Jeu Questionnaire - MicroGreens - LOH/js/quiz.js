@@ -22,17 +22,17 @@ function determinerChoixUtilisateur4()
 	reponseUtilisateur = 4;
 }
 
-function validerQuestion(noQuestionCourante, choixUtilisateur)
+function validerQuestion(determinerChoixUtilisateur1, determinerChoixUtilisateur2, determinerChoixUtilisateur3, determinerChoixUtilisateur4)
 {
-	console.log(validerQuestion)
-	if (reponseUtilisateur == questionsQuiz[questionCourante][1]) 
+	if(reponseUtilisateur !== questionsQuiz[questionCourante - 1][1])
 	{
-		afficherBonneReponse();
+		window.prompt("Mauvaise réponse");
 	}
 	else
 	{
-		afficherMauvaiseReponse();
+		window.prompt("Bonne Réponse")
 	}
+
 }
 
 
@@ -87,7 +87,6 @@ function chargerQuestion()
 
 function questionSuivante()
 {
-	console.log(questionSuivante)
 	if (questionCourante < (MAX_QUESTIONS - 1))
 	{
 		questionCourante ++;
@@ -144,7 +143,7 @@ function afficherBonneReponse()
 
 function afficherMauvaiseReponse()
 {
-
+	
 }
 
 /**
