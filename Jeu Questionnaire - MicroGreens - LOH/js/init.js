@@ -10,6 +10,7 @@
   * @type {number}
   * @description Nombre de questions à afficher dans le quiz.
   */
+
 const MAX_QUESTIONS = 5;
 
 /**
@@ -17,6 +18,7 @@ const MAX_QUESTIONS = 5;
   * @type {number}
   * @description Nombre de choix par question.
   */
+
 const NB_CHOIX_MAX = 4;
 
 /**
@@ -24,6 +26,7 @@ const NB_CHOIX_MAX = 4;
   * @type {number}
   * @description Position de l’index de la bonne réponse.
   */
+
 var positionReponse = 0;
 
 /**
@@ -32,6 +35,7 @@ var positionReponse = 0;
   * @type {number}
   * @description Index de la question présentement affichée.
   */
+
 var questionCourante = 0;
 
 /**
@@ -40,6 +44,7 @@ var questionCourante = 0;
   * @type {number}
   * @description Total du pointage accumulé.
   */
+
 var totalPointage = 0;
 
 /**
@@ -48,6 +53,7 @@ var totalPointage = 0;
   * @type {number}
   * @description Choix de l’utilisateur.
   */
+
 var reponseUtilisateur = 0;
 
 /**
@@ -57,6 +63,7 @@ var reponseUtilisateur = 0;
   * @description Liste des questions disponibles pour le quiz.
   * @example [["Quel est le meilleur aliment pour votre santé?", 1, "https://www.google.ca" ,"Brocoli","Croustilles sans OGM","Crème glacée","Poutine déjeuner"]]
   */
+
 var tableauQuestions = 
 [
 
