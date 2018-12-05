@@ -10,7 +10,6 @@
   * @type {number}
   * @description Nombre de questions à afficher dans le quiz.
   */
-
 const MAX_QUESTIONS = 5;
 
 /**
@@ -18,7 +17,6 @@ const MAX_QUESTIONS = 5;
   * @type {number}
   * @description Nombre de choix par question.
   */
-
 const NB_CHOIX_MAX = 4;
 
 /**
@@ -26,7 +24,6 @@ const NB_CHOIX_MAX = 4;
   * @type {number}
   * @description Position de l’index de la bonne réponse.
   */
-
 var positionReponse = 0;
 
 /**
@@ -35,7 +32,6 @@ var positionReponse = 0;
   * @type {number}
   * @description Index de la question présentement affichée.
   */
-
 var questionCourante = 0;
 
 /**
@@ -44,8 +40,7 @@ var questionCourante = 0;
   * @type {number}
   * @description Total du pointage accumulé.
   */
-
-var totalPointage = 0;
+var totalPointage = 1;
 
 /**
   * @global
@@ -53,16 +48,8 @@ var totalPointage = 0;
   * @type {number}
   * @description Choix de l’utilisateur.
   */
-
 var reponseUtilisateur = 0;
 
-/**
-  * @global
-  * @name tableauQuestions
-  * @type {object}
-  * @description Liste des questions disponibles pour le quiz.
-  * @example [["Quel est le meilleur aliment pour votre santé?", 1, "https://www.google.ca" ,"Brocoli","Croustilles sans OGM","Crème glacée","Poutine déjeuner"]]
-  */
 
 var tableauQuestions = 
 [
@@ -82,7 +69,7 @@ var tableauQuestions =
 
 var questionsQuiz = [
 
-["Quel pourcentage de la surface de la Terre le domaine agricole occupe-il?", 3, "https://laveritesurlasante.com/micro-greens-loh/problematique.html " ,"15%","24%","38%","53%"],
+["Quel pourcentage de la surface de la Terre le domaine agricole occupe-il?", 3, "https://laveritesurlasante.com/micro-greens-loh/problematique.html" ,"15%","24%","38%","53%"],
 ["Combien de temps devons-nous attendre après la germination d’un microgreen pour le récolter?", 4, "https://www.bootstrapfarmer.com/blogs/microgreens/the-ultimate-microgreen-cheat-sheet" ,"2 semaines" ,"Entre une et 2 semaines" ,"3 semaines" ,"Entre 2 et 3 semaines"],
 ["Quelle molécule retrouvons-nous en plus grande variété dans les microgreens en comparaison avec leurs contreparties végétales matures?", 1, "https://www.getmomental.com/blogs/nutrition/what-are-microgreens-10-best-microgreens-and-why-your-body-craves-them-momental-nootropics " ,"Polyphénol" ,"Sel" ,"Acide aminé" ,"Glucose"],
 ["Quelle variété de microgreen permet de réduire les risques de maladies cardiovasculaires?", 3, "https://frmedbook.com/les-microgreens-de-chou-rouge-pourraient-reduire-le-risque-de-maladie-cardiovasculaire/" ,"Radis" ,"Basilic" ,"choux rouge" ,"Betterave"],
@@ -101,24 +88,15 @@ function init()
   document.getElementById("boutonDebuter").addEventListener("click", changeTexteChoix, false);
 
   document.getElementById("btnChoix1").addEventListener("click", determinerChoixUtilisateur1, false);
-  document.getElementById("btnChoix1").addEventListener("click", questionSuivante, false);
-  document.getElementById("btnChoix1").addEventListener("click", majTexteChoix, false);
-  document.getElementById("btnChoix1").addEventListener("click", validerQuestion, false);
-
   document.getElementById("btnChoix2").addEventListener("click", determinerChoixUtilisateur2, false);
-  document.getElementById("btnChoix2").addEventListener("click", questionSuivante, false);
-  document.getElementById("btnChoix2").addEventListener("click", majTexteChoix, false);
-  document.getElementById("btnChoix2").addEventListener("click", validerQuestion, false);
-
   document.getElementById("btnChoix3").addEventListener("click", determinerChoixUtilisateur3, false);
-  document.getElementById("btnChoix3").addEventListener("click", questionSuivante, false);
-  document.getElementById("btnChoix3").addEventListener("click", majTexteChoix, false);
-  document.getElementById("btnChoix3").addEventListener("click", validerQuestion, false);
-
   document.getElementById("btnChoix4").addEventListener("click", determinerChoixUtilisateur4, false);
-  document.getElementById("btnChoix4").addEventListener("click", questionSuivante, false);
-  document.getElementById("btnChoix4").addEventListener("click", majTexteChoix, false);
-  document.getElementById("btnChoix4").addEventListener("click", validerQuestion, false);
+
+  document.getElementById("boiteChoix").addEventListener("click", questionSuivante, false);
+  document.getElementById("boiteChoix").addEventListener("click", majTexteChoix, false);
+  document.getElementById("boiteChoix").addEventListener("click", validerQuestion, false);
+  document.getElementById("boiteChoix").addEventListener("click", estFinPartie, false);
+
 
   document.getElementById("totalQuestions").textContent = MAX_QUESTIONS;
 }
