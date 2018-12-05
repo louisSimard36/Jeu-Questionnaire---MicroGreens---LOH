@@ -52,9 +52,9 @@
 
 			<div class="row" style="padding:1em;">
 				<div class="col-6">
-					<h3>Question # <span id="noQuestionCourante">1</span></h3>
+					<h3 id="affichageQuestion" style="display: block;">Question # <span id="noQuestionCourante">1</span></h3>
 				</div>
-				<div class="col-6 text-right">
+				<div id="affichagePoints" class="col-6 text-right" style="display: block;">
 					<h3>Pointage: <span id="totalPoints">0</span>/<span id="totalQuestions"></span></h3>
 				</div>
 			</div>
@@ -75,6 +75,8 @@
 									Bienvenue au jeu questionnaire La Vérité sur la Santé!
 									<br>Préparez-vous à débuter!
 								</p>
+								<h2 id="scoreFinal"></h2>
+
 
 							<div id="boitesChoix" style="display: none;">
 										<div class="row" id="boiteChoix">
@@ -102,7 +104,7 @@
 			</div>
 
 			<div id="resumeQuestion" class="text-center" style="background-color:#f7f7f7; padding:1em;display:none">
-				<h2>Fin de la partie</h2>
+				<h2 id="finPartie">Fin de la partie</h2>
 				<button id="btnNouvellePartie" class="btn btn-block btn-lg">Recommencer</button>
 			</div>
 
@@ -129,12 +131,14 @@
 
 			<div id="auteur" class="text-muted">
 				<p>Quizz sur les MicroGreens - 2018</p>
-				<p>Louis-Étienne Simard, Hubert Desrochers et Olivier Fortin</p>
+				<p>Louis-Étienne Simard et Hubert Desrochers</p>
 			</div>
 
 		</div>
 
 		<script>
+
+
 		</script>
 
 		<!-- Audio CC0 - https://www.zapsplat.com/ -->
